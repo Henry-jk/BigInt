@@ -1,0 +1,2 @@
+1 进入BigInt目录执行 make命令，生成BigInt.o文件
+2 回到上层目录，执行make命令，生成BigIntSer.cgi 文件
