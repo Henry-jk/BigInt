@@ -600,3 +600,10 @@ void BigInt::PowMod(BigInt &bt, BigInt &a, BigInt &b, const BigInt &n)
 	bt = ans;
 	bt.clear_head_zero();
 }
+//RSA  bt = a^b % n
+void BigInt::PowMod(BigInt &bt, BigInt &a, BigInt &b, const BigInt &n)
+{
+	BigInt tmp;
+	BigInt::Power(tmp, a, b);
+	BigInt::Mod(bt, tmp, n);
+}
